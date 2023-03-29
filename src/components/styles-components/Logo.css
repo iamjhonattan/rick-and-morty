@@ -1,0 +1,12 @@
+.logo {
+    height: 30vmin;
+    pointer-events: none;
+    margin: 3%;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  

@@ -1,25 +1,12 @@
-export const Rick = {
-  id: 1,
-  name: "Rick Sanchez",
-  status: "Alive",
-  species: "Human",
-  gender: "Male",
-  origin: {
-    name: "Earth (C-137)",
-    url: "https://rickandmortyapi.com/api/location/1",
-  },
-  image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-};
-
-export default [
+const characters = [
   {
     id: 1,
     name: "Rick Sanchez",
-    status: "Alive",
-    species: "Human",
-    gender: "Male",
+    status: "Vivo",
+    species: "Humano",
+    gender: "Masculino",
     origin: {
-      name: "Earth (C-137)",
+      name: "Tierra (C-131)",
       url: "https://rickandmortyapi.com/api/location/1",
     },
     image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
@@ -27,23 +14,23 @@ export default [
   {
     id: 2,
     name: "Morty Smith",
-    status: "Alive",
-    species: "Human",
-    gender: "Male",
+    status: "Vivo",
+    species: "Humano",
+    gender: "Masculino",
     origin: {
-      name: "unknown",
+      name: "Tierra (C-131)",
       url: "",
     },
     image: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
   },
   {
     id: 3,
-    name: "Summer Smith",
-    status: "Alive",
-    species: "Human",
-    gender: "Female",
+    name: " Summer Smith",
+    status: "Vivo",
+    species: "Humano",
+    gender: "Femenino",
     origin: {
-      name: "Earth (Replacement Dimension)",
+      name: "Tierra (C-131)",
       url: "https://rickandmortyapi.com/api/location/20",
     },
     image: "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
@@ -51,11 +38,11 @@ export default [
   {
     id: 4,
     name: "Beth Smith",
-    status: "Alive",
-    species: "Human",
-    gender: "Female",
+    status: "Vivo",
+    species: "Humano",
+    gender: "Femenino",
     origin: {
-      name: "Earth (Replacement Dimension)",
+      name: "Tierra (C-131)",
       url: "https://rickandmortyapi.com/api/location/20",
     },
     image: "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
@@ -63,13 +50,15 @@ export default [
   {
     id: 5,
     name: "Jerry Smith",
-    status: "Alive",
-    species: "Human",
-    gender: "Male",
+    status: "Vivo",
+    species: "Humano",
+    gender: "Masculino",
     origin: {
-      name: "Earth (Replacement Dimension)",
+      name: "Tierra (C-131)",
       url: "https://rickandmortyapi.com/api/location/20",
     },
     image: "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
   },
 ];
+
+export default characters;

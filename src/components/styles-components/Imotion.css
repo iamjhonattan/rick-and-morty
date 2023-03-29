@@ -1,0 +1,67 @@
+/*.Imotion {
+  position: relative;
+}
+
+.background-imotion {
+  position: absolute;
+  top: 50;
+  left: 50;
+  width: 50%;
+  height: 50%;
+  background-image: url(../../images/ram-background.png);
+  background-size: cover;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+  }
+*/
+
+.Imotion {
+  position: relative;
+}
+
+.background-imotion {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 30%;
+  height: 50%;
+  margin: -25% 0 0 -25%;
+  background-image: url(../../images/ram-background.png);
+  background-size: cover;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+  

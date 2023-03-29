@@ -1,5 +1,5 @@
 import Card from "./Card";
-import "./Cards.css";
+import "./styles-components/Cards.css";
 
 export default function Cards({ characters }) {
   return (

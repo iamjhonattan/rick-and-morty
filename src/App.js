@@ -1,27 +1,35 @@
-import "./App.css";
+import "./styles/App.css";
+import Logo from "./components/Logo.jsx";
+import Imotion from "./components/Imotion.jsx";
 import Cards from "./components/Cards.jsx";
 import SearchBar from "./components/SearchBar.jsx";
-import characters, { Rick } from "./data.js";
+import characters from "./data.js";
+import LoginButton from "./components/LoginButton.jsx";
+import Footer from "./components/Footer";
 
 function App() {
   function onSearch(characterID) {
     window.alert(characterID);
   }
+
+  function handleLogin() {
+    // Lógica de inicio de sesión
+  }
+
   return (
     <div className="App">
-      <SearchBar onSearch={onSearch} />
+      <header className="App-header">
+        <SearchBar onSearch={onSearch} />
+        <LoginButton onClick={handleLogin} />
+      </header>
+
+      {/* Body - Cuerpo de pagina */}
+      <Logo />
+      <Imotion />
       <Cards characters={characters} />
-      {/*<Card
-        id={Rick.id}
-        name={Rick.name}
-        status={Rick.status}
-        species={Rick.species}
-        gender={Rick.gender}
-        origin={Rick.origin.name}
-        image={Rick.image}
-        onClose={() => window.alert("Emulamos que se cierra la card")}
-      */}
-      />
+
+      {/* Footer - Pie de página */}
+      <Footer />
     </div>
   );
 }

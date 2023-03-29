@@ -1,0 +1,78 @@
+/* .card{
+    border: 2px solid rgba(51, 51, 51, 0.801);
+    width: 22%;
+}
+img{
+    width: 100%;
+} */
+
+.card{
+    border: 2px solid rgba(51, 51, 51, 0.801);
+    border-radius: 20px;
+    width: 22%;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+}
+
+.card-desciption {
+    
+    text-align: left;
+    margin-top: 0px;
+    line-height: 0px;
+}
+
+.card img{
+    width: 100%;
+    border-style: double;
+    border-color: rgb(189, 189, 189);
+    border-radius: 10%;
+}
+
+.card img:hover {
+    filter: saturate(180%);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 10px rgba(255, 94, 98, 0.5);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8; /* Nueva regla */
+    color: rgb(238, 238, 238);
+    margin-bottom: auto;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px rgba(255, 94, 98, 0.6);
+    opacity: 1; /* Nueva regla */
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active {
+    transform: translateY(0px);
+    box-shadow: 0px 3px 10px rgba(255, 94, 98, 0.5);
+    opacity: 0.8; /* Nueva regla */
+  }
+  
+  
+

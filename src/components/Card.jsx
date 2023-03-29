@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./styles-components/Card.css";
 
 export default function Card({
   id,
@@ -12,13 +12,28 @@ export default function Card({
 }) {
   return (
     <div className="card">
-      <button onClick={onClose}>X</button>
       <h2>{name}</h2>
-      <h2>{status}</h2>
-      <h2>{species}</h2>
-      <h2>{gender}</h2>
-      <h2>{origin}</h2>
+
       <img src={image} alt="Rick and Morty" />
+
+      <div className="card-desciption">
+        <h4>
+          <strong>Estatus:</strong> <span>{status}</span>
+        </h4>
+        <h4>
+          <strong>Especie:</strong> <span>{species}</span>
+        </h4>
+        <h4>
+          <strocg>Genero:</strocg> <span>{gender}</span>
+        </h4>
+        <h4>
+          <strong>Origen:</strong> <span>{origin}</span>
+        </h4>
+      </div>
+
+      <button className="btn" onClick={onClose}>
+        x
+      </button>
     </div>
   );
 }
