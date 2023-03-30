@@ -18,20 +18,20 @@ export default function Card({
 
       <div className="card-desciption">
         <h4>
-          <strong>Estatus:</strong> <span>{status}</span>
+          <strong>Status:</strong> <span>{status}</span>
         </h4>
         <h4>
-          <strong>Especie:</strong> <span>{species}</span>
+          <strong>Species:</strong> <span>{species}</span>
         </h4>
         <h4>
-          <strocg>Genero:</strocg> <span>{gender}</span>
+          <strocg>Gender:</strocg> <span>{gender}</span>
         </h4>
         <h4>
-          <strong>Origen:</strong> <span>{origin}</span>
+          <strong>Origin:</strong> <span>{origin}</span>
         </h4>
       </div>
 
-      <button className="btn" onClick={onClose}>
+      <button className="btn" onClick={() => onClose(id)}>
         x
       </button>
     </div>
